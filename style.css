@@ -1,0 +1,100 @@
+
+
+
+.main {
+    background-image: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.30)), url(images/indít.jpg);
+    filter: grayscale(25%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 40vh; */
+    height: 38vw;
+    margin-top: 54px;
+    
+}
+
+.distributors {
+    background-color: #333;
+    color: #fed130;
+}
+.distributors h1 {
+    font-size: 200%;
+    height: 64px;
+    text-align: center;
+    padding-top: 8px;
+    box-shadow: 0px 2px 2px 0px rgba(254, 209, 48, 0.884);
+    margin: 2px;
+}
+/* p {
+    font-family: Lato;
+} */
+.companies {
+    list-style: none;
+}
+.map {
+    width: 100%;
+    margin: 8px 96px 16px 8px;
+}
+.map img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.map img:hover {
+    opacity: 1;
+    transform: scale(1.03);    
+}
+
+.hi img {
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.hi img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 100px auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+article {
+   padding: 4px 0 4px 16px;
+   font-size: 80%;
+   text-align: left;
+   vertical-align: middle;
+}
+article a {
+  color: #fed130;
+}
+.hi a img {
+    width: 6rem;
+    
+}
+
+@media (min-width: 800px) {
+    article {
+        font-size: 120%;
+    }
+    .wrapper {
+        grid-template-columns: 0.5fr 150px auto;
+    }
+    .hi a img {
+        width: 6rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        margin-top: 34px;
+    }
+    .distributors h1 {
+        font-size: 110%;
+        height: 36px;
+    }
+}

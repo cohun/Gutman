@@ -1,0 +1,81 @@
+/*-----------------------------*/
+/* MEALS */
+/*-----------------------------*/
+.section-meals {
+    padding: 0;
+}
+        
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: : 100%;
+    height: auto;
+    transform: scale(0.97);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.CenterMe {
+    margin-top: 54px;
+    background-color: #fed133;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 130%;
+    text-transform: uppercase;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CenterMe a {
+    display: inline-block;
+    width: 44px;
+}
+.CenterMe a img {
+    width: 50%;
+    margin: 6px 0 0 8px;  
+}
+.caption {
+    color: #fed133;
+    font-size: 130%;
+    height: 36px;
+    text-align: center;
+}
+
+@media (max-width: 550px) {
+    .caption {
+        font-size: 110%;
+    }
+    .CenterMe {
+        margin-top: 48px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        height: 24px;
+    }
+    .meals-showcase li {
+        width: 100%;
+    }
+}
